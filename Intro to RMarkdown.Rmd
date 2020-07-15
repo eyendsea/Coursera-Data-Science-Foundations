@@ -1,0 +1,66 @@
+---
+title: "Introduction to RMarkdown"
+author: "eyendsee"
+date: "7/14/2020"
+output: pdf_document
+---
+```{r}
+print("Hello World")
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+## Making Bulllets
+
+Markdown needs an empty line before a list
+
+- trying
+- to
+- make
+- a
+- bullet
+- list
+  - second
+  - try
+    - third
+    - try
+
+## Linking Links to the Document
+
+[google link](https://www.google.com)
+
+When linking links to the document follow this:
+
+1. type the name of the link (this is the text that will be shown in the document)
+2. encapsulate this name inside a "[]".
+3. Follow to name with (insert link to the mentioned text).
+
+
+## Strikethrough
+
+~~strikethrough~~
+
+
+
+    
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
